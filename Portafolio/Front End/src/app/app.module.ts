@@ -11,6 +11,8 @@ import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
     ExperienceComponent,
     EducationComponent,
     SkillsComponent,
-    PortafolioComponent
+    PortafolioComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
