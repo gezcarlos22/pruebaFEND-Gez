@@ -10,8 +10,12 @@
         <li><a href="#"><img src="assets/instagram.png" id="instagram"></a></li>
         <li><a href="#"><img src="assets/github.png" id="gibhub"></a></li>
         
-        <button class="cuenta">
-          <a href="/login">LOGIN</a>
+        <button class="cuenta" *ngIf="!isLogged">
+          <a href="/login" >LOGIN</a>
+        </button>
+
+        <button class="cuenta" *ngIf="isLogged">
+          <a href="/login">CERRAR SESION</a>
         </button>
 
       </ul>

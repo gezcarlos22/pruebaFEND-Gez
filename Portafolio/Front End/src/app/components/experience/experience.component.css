@@ -186,14 +186,20 @@
   }
   }
   
-  /*EDUCACION LOGOS*/
+  /*EXPERIENCIA LOGOS*/
   .cd-timeline-content img {
     width: 150px
   }
-  .cd-timeline-content #IPET260 {
-    width: 120px
-  }
-  .cd-timeline-content #unc {
-    width: 150px
+
+  /*EXPERIENCIA BOTONES*/
+  .botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
+  .botones li {
+    list-style: none;
+    margin: 0 0.5em;
+  }
+

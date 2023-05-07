@@ -15,10 +15,11 @@
 			</div>
 
 			<div class="login">
-				<form>
+				<form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
 					<label for="chk" aria-hidden="true">Login</label>
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
+					<input type="email" id="nombreUsuario" name="nombreUsuario" placeholder="Usuario"  [(ngModel)]= "nombreUsuario" required>
+					
+					<input type="password" id="password" name="pswd" placeholder="Password" [(ngModel)]= "password" required>
 					<button>Login</button>
 				</form>
 			</div>
