@@ -17,6 +17,7 @@
   }
   
   .educ .titulo h2 {
+    padding: 0 1em 0 1em ;
     font-size: 30px;
     color: #da2d2d;
     position: relative;
@@ -136,7 +137,7 @@
   margin-right: 30px;
   background: #333C42;
   border-radius: 2px;
-  padding: 1em;
+  padding: 1em 2em 1em 1em;
   
   }
   .cd-timeline-content:after {
@@ -186,14 +187,19 @@
   }
   }
   
-  /*EDUCACION LOGOS*/
+  /*EXPERIENCIA LOGOS*/
   .cd-timeline-content img {
     width: 150px
   }
-  .cd-timeline-content #IPET260 {
-    width: 120px
-  }
-  .cd-timeline-content #unc {
-    width: 150px
+
+  /*EXPERIENCIA BOTONES*/
+  .botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
+  .botones li {
+    list-style: none;
+    margin: 0 0.5em;
+  }

@@ -1,15 +1,25 @@
 /*SKILLS*/
-        
+
+.circulo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   #skills {
-    background: linear-gradient( #eb5a5acc, rgba(33, 16, 16, 0.7)),url(/assets/computadora.jpg);
+    background: linear-gradient( #6e2929cc, rgba(0, 0, 0, 0.7)),url(/assets/computadora.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
     background-position: center center;
     padding: 100px 0;
+    line-height: 1.5;
+    margin: auto;
+    text-align: center;
+    align-items: center;
   }
   
+
   /* Skills titulo */
   #skills h2 {
     max-width: 1000px;
@@ -60,39 +70,14 @@
     transition-property: width, left;
   }
   
-  
-  /* Skills barras */
-  
-  #skills .barras {
-    width: 90%;
-    margin: auto;
+  /*SKILL BOTONES*/
+  .botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  #skills span {
-    top: -40px;
-    left: 2%;
-    position: relative;
-    font-size: 1.4em;
-    font-weight: bolder;
-    font-family: monospace;
-    color: #fff;
+  .botones li {
+    list-style: none;
+    margin: 0 0.5em;
   }
-  
-  progress {
-    border: 0;
-    height: 2.5em;
-    width: 100%;
-  }
-  
-  progress::-webkit-progress-bar {
-    background-color: #e0eaf0;
-  }
-  
-  progress::-webkit-progress-value {
-    background-color: #da2d2d;;
-  }
-  
-  progress::-moz-progress-bar {
-    background-color: #da2d2d;;
-  }
-  

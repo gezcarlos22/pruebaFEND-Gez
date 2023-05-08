@@ -1,61 +1,37 @@
 <!-- SECCION EDUCACION -->
 <section class="educ">
     <div class="titulo">
-        <h2>education</h2>
-    </div>
+      <h2>Educacion</h2>
 
-    <section id="cd-timeline" class="cd-container">
-        <div class="cd-timeline-block">
-        </div>
+      <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educacion
+      </button>
 
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-movie">
-            </div> <!-- cd-timeline-img -->
+    </div>  
+    
+    <section id="cd-timeline" class="cd-container" >
+      <div class="cd-timeline-block">
+      </div>
+  
+      <div class="cd-timeline-block" *ngFor="let Educacion of educacion">
+        <div class="cd-timeline-img cd-movie">
+        </div> <!-- cd-timeline-img -->
+  
+        <div class="cd-timeline-content">
+          <h2>{{Educacion.nombreE}}</h2> 
+          <!-- <img src="assets/unc.png" id="unc"> -->
+          <p>{{Educacion.descripcionE}}</p>
+          <!-- <span class="cd-date">Jan 18</span> -->
+            <div class="botones">
+              <li><button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                <i class="bi bi-pencil-square"></i></button></li>
+              <li><button class="btn btn-danger" (click)="delete(Educacion.id)">
+              <i class="bi bi-x-square"></i></button></li>
+            </div>
 
-            <div class="cd-timeline-content">
-                <h2>INGENIERIA CIVIL</h2> 
-                <img src="assets/unc.png" id="unc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-                <span class="cd-date">Jan 18</span>
-            </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture">
-            </div> <!-- cd-timeline-img -->
-
-            <div class="cd-timeline-content">
-                <h2>MAESTRO MAYOR DE OBRA</h2>
-                <img src="assets/IPEM260-A.png" id="IPET260"> 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-                <span class="cd-date">Jan 24</span>
-            </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-location">
-            </div> <!-- cd-timeline-img -->
-
-            <div class="cd-timeline-content">
-                <h2>DISEÑO GRAFICO DIGITAL</h2>
-                <img src="assets/coderhouse.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                <span class="cd-date">Feb 14</span>
-            </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-location">
-            </div> <!-- cd-timeline-img -->
-
-            <div class="cd-timeline-content">
-                <h2>MARKETING DIGITAL</h2>
-                <img src="assets/coderhouse.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                <span class="cd-date">Feb 14</span>
-            </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-    </section>    
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+    </section>
 </section>
 
 

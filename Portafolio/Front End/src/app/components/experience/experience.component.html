@@ -2,13 +2,11 @@
 <section class="exp">
     <div class="titulo">
       <h2>Experience</h2>
-    </div>  
-    
-    <div class="col-lg-2">
+
       <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
-          Nueva Experiencia
+        Nueva Experiencia
       </button>
-    </div> 
+    </div>  
     
     <section id="cd-timeline" class="cd-container" >
       <div class="cd-timeline-block">
@@ -24,8 +22,8 @@
           <p>{{Experiencia.descripcionE}}</p>
           <!-- <span class="cd-date">Jan 18</span> -->
             <div class="botones">
-              <li><button class="btn btn-light" (click)="delete(Experiencia.id)">
-              <i class="bi bi-pencil-square"></i></button></li>
+              <li><button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                <i class="bi bi-pencil-square"></i></button></li>
               <li><button class="btn btn-danger" (click)="delete(Experiencia.id)">
               <i class="bi bi-x-square"></i></button></li>
             </div>
@@ -36,3 +34,5 @@
       
     </section>
 </section>
+
+
